@@ -16,6 +16,9 @@ sleep 2
 cd /Applications/Xcode.app/Contents/Developer/Toolchains
 echo "Installing Xcode 11 toolchain"
 sudo git clone https://github.com/nahtedetihw/Xcode11Toolchain
+sudo mv /Applications/Xcode.app/Contents/Developer/Toolchains/Xcode11Toolchain/XcodeDefault.xctoolchain /Applications/Xcode.app/Contents/Developer/Toolchains
+sudo rm -r /Applications/Xcode.app/Contents/Developer/Toolchains/Xcode11Toolchain
+
 echo "Done"
 cd
 ;;
